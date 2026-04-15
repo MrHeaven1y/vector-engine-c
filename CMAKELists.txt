@@ -1,0 +1,27 @@
+cmake_minimum_required(VERSION 3.10)
+
+project(VectorEngine C)
+
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD_REQUIRED TRUE)
+
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra -O3")
+
+# engine files inside the src/ directory
+set(SOURCES
+    src/graph.c
+    src/io.c
+    src/layers.c
+    src/ops.c
+    src/optimizers.c
+    src/tensor.c
+)
+
+# telling the compiler where all the headers files are
+include_directories(include)
+
+# building executable using new examples/ folder
+add_executable(xor_train examples/xor_train.c ${SOURCES})
+
+
+target_link_libraries(xor_train PRIVATE m)
