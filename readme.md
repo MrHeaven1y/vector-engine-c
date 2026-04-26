@@ -1,9 +1,14 @@
-<img width="497" height="525" alt="Image" src="https://github.com/user-attachments/assets/617bb279-a5db-489a-b9b0-1a6b0e50b6d2" />
-
 # C Autograd Engine — API Reference
 
 A scalar-batched reverse-mode autograd engine written in plain C.  
 Every tensor is a flat `double[]` column-vector; a "batch" is those scalars laid side-by-side in one array.
+
+---
+
+## Output
+
+<img width="497" height="525" alt="Image" src="https://github.com/user-attachments/assets/617bb279-a5db-489a-b9b0-1a6b0e50b6d2" />
+
 
 ---
 
