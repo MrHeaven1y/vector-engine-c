@@ -437,3 +437,8 @@ Weights are stored as `[batch_size]` arrays during training. Call `resize_model_
 
 **Capacity too small**  
 If `t_cap / p_cap / i_cap` are too small, `realloc` kicks in every step. Set them to ~2× your expected count upfront.
+
+## 👨‍💻 Author
+
+**Dibyendu Mukherjee**
+* Contact: dibyendumukherjee916@gmail.con
