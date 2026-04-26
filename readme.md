@@ -1,3 +1,5 @@
+<img width="249" height="513" alt="Image" src="https://github.com/user-attachments/assets/3ef888c4-ec15-412b-bbeb-2da074392d70" />
+
 # C Autograd Engine — API Reference
 
 A scalar-batched reverse-mode autograd engine written in plain C.  
@@ -22,6 +24,9 @@ project/
 ├── main.c            ← YOUR code lives here, at the project root
 └── README.md
 ```
+
+<img width="497" height="525" alt="Image" src="https://github.com/user-attachments/assets/617bb279-a5db-489a-b9b0-1a6b0e50b6d2" />
+
 
 **You never touch `src/` or `include/` during normal use.**  
 Write your entry point in `main.c` (or any `.c` at root level) and compile with:
