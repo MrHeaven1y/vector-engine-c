@@ -5,6 +5,14 @@ Every tensor is a flat `double[]` column-vector; a "batch" is those scalars laid
 
 ---
 
+## What’s implemented
+
+- Dynamic computation graph (GraphContext)
+- Reverse-mode autodiff
+- Tensor operations with broadcasting
+- Neural network layers (Dense, Linear)
+- Optimizer (SGD + momentum)
+
 ## Project Layout
 
 ```
@@ -23,6 +31,12 @@ gcc main.c src/*.c -Iinclude -lm -o net
 ```
 
 ---
+
+## Challenges
+
+- Manual memory management in C
+- Graph lifecycle handling (reset_tape vs reset_graph)
+- Gradient accumulation across batches
 
 ## Core Concepts
 
